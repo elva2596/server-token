@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "cross-env NODE_ENV=development supervisor --harmoney index.js"
+    "start": "cross-env NODE_ENV=production pm2 start index.js --node-args='--harmony' --name 'server'"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.18.0",
     "bcrypt": "^1.0.2",
     "body-parser": "^1.17.2",
+    "compression": "^1.7.2",
     "config-lite": "^2.0.0",
     "dotenv": "^4.0.0",
     "express": "^4.15.3",

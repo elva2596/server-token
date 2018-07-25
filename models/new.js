@@ -10,13 +10,10 @@ const Schema = mongoose.Schema;
 //   content_en:""
 // }
 const newSchema = new Schema({
-    title_cn:String,
-    title_en:String,
-    place_cn:String,
-    place_en:String,
-    coverUrl:String,
     content_cn:String,
-    content_en:String
+    content_en:String,
+    tittle_cn:String,
+    tittle_en:String
 })
 const NewModel = mongoose.model("New",newSchema);
 module.exports = NewModel

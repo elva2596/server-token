@@ -12,7 +12,9 @@ const PubSchema = new Schema({
   content_en:String,
   coverUrl:String,
   tittle_en:String,
-  tittle_cn:String
+  tittle_cn:String,
+  create_time_cn:String,
+  create_time_en:String
 })
 const PubModel = mongoose.model("Publication",PubSchema);
 module.exports = PubModel

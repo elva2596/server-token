@@ -19,7 +19,7 @@ const createWork = (req,res)=>{
               })
 }
 const getWorks = (req,res)=>{
-  WorkModel.find({},{coverUrl:1})
+  WorkModel.find({},{works:0})
             .exec()
             .then(works=>{
               res.send({

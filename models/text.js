@@ -13,7 +13,9 @@ const textSchema = new Schema({
   content_en:String,
   tittle_cn:String,
   tittle_en:String,
-  time_cn:String
+  authorInfo_cn:String,
+  authorInfo_en:String,
+  fileList:[{name:String,url:String}]
 })
 const TextModel = mongoose.model("Text",textSchema);
 module.exports = TextModel

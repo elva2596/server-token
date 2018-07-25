@@ -10,15 +10,40 @@ const Schema = mongoose.Schema;
 //   desc_cn:"",
 //   desc_en:"",
 // }
+//
+// exhInfo:{
+//   tittle_cn:"",
+//   tittle_en:"",
+//   place_cn:"",
+//   place_en:"",
+//   create_time_cn:"",
+//   create_time_en:"",
+//   coverUrl:"",
+//   desc_cn:"",
+//   desc_en:"",
+//   exhs:[
+//     {
+//       imageUrl:'',
+//       count:"一"
+//     },
+//   ]
+// }
 const exhSchema = new Schema({
-  title_cn:String,
-  title_en:String,
+  tittle_cn:String,
+  tittle_en:String,
   place_cn:String,
   place_en:String,
   coverUrl:String,
-  create_time:String,
+  create_time_cn:String,
+  create_time_en:String,
   desc_cn:String,
-  desc_en:String
+  desc_en:String,
+  exhs:[
+    {
+      imageUrl:String,
+      count:String
+    },
+  ]
 })
 const ExhModel = mongoose.model("Exhibition",exhSchema);
 module.exports = ExhModel

@@ -18,7 +18,7 @@ const createExhibition = (req,res)=>{
               })
 }
 const getExhitions = (req,res)=>{
-  ExhModel.find({},{coverUrl:1})
+  ExhModel.find({})
             .exec()
             .then(works=>{
               res.send({

@@ -18,7 +18,7 @@ const createNew = (req,res)=>{
             })
 }
 const getNews = (req,res)=>{
-  NewModel.find({},{coverUrl:1})
+  NewModel.find({})
           .then(news=>{
             res.send({
               status:1,

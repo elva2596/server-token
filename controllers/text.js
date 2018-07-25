@@ -1,6 +1,5 @@
 const TextModel = require('../models/text');
 const createText = (req,res)=>{
-  // console.log(req.body)
   const instanceText = new TextModel(req.body)
   instanceText.save()
               .then(text=>{

@@ -13,3 +13,4 @@ module.exports = (app)=>{
   app.use("/api",require('./biography'))
   app.use("/api",require('./contact'))
 };
+// console.log(12323213)
